@@ -43,7 +43,7 @@
 
 [[override]]
   name = "github.com/tendermint/go-amino"
-  version = "=v0.12.0"
+  version = ">= 0.12.0, < 1.0.0"
 
 [prune]
   go-tests = true

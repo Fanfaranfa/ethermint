@@ -547,12 +547,12 @@
   revision = "d8387025d2b9d158cf4efb07e7ebf814bcce2057"
 
 [[projects]]
-  digest = "1:25c97d29878b5f821bb17a379469f0f923426188241bf2aa81c18728cdc6927c"
+  digest = "1:02462ad4cc9b135c4ebfb9edccb53e8c705bbebdbf8664799ea641440188387e"
   name = "github.com/tendermint/go-amino"
   packages = ["."]
   pruneopts = "T"
-  revision = "faa6e731944e2b7b6a46ad202902851e8ce85bee"
-  version = "v0.12.0"
+  revision = "dc14acf9ef15f85828bfbc561ed9dd9d2a284885"
+  version = "v0.14.1"
 
 [[projects]]
   digest = "1:2ecd824e1615a8becefea26637fe24576f3800260f5dc91ffe44b37bdbd27878"
