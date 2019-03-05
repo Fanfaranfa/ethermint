@@ -13,7 +13,7 @@
 
 [[constraint]]
   name = "github.com/hashicorp/golang-lru"
-  revision = "0fb14efe8c47ae851c0034ed7a448854d3d34cf3"
+  version = "^0.5.1"
 
 [[constraint]]
   name = "github.com/spf13/cobra"
