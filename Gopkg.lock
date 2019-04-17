@@ -75,13 +75,6 @@
   version = "v1.7.1"
 
 [[projects]]
-  digest = "1:c7644c73a3d23741fdba8a99b1464e021a224b7e205be497271a8003a15ca41b"
-  name = "github.com/ebuchman/fail-test"
-  packages = ["."]
-  pruneopts = "T"
-  revision = "95f809107225be108efcf10a3509e4ea6ceef3c4"
-
-[[projects]]
   branch = "master"
   digest = "1:67d0b50be0549e610017cb91e0b0b745ec0cad7c613bc8e18ff2d1c1fc8825a7"
   name = "github.com/edsrzf/mmap-go"
@@ -183,7 +176,7 @@
   version = "v1.8.0"
 
 [[projects]]
-  digest = "1:da39f4a22829ca95e63566208e0ea42d6f055f41dff1b14fdab88d88f62df653"
+  digest = "1:c6e109ed32d266dea072dd6d00e3ee26fb960f86ed0ba7f6a07e5d2bfdeab868"
   name = "github.com/gogo/protobuf"
   packages = [
     "gogoproto",
@@ -194,11 +187,11 @@
     "types",
   ]
   pruneopts = "T"
-  revision = "636bf0302bc95575d69441b25a2603156ffdddf1"
-  version = "v1.1.1"
+  revision = "ba06b47c162d49f2af050fb4c75bcbc86a159d5c"
+  version = "v1.2.1"
 
 [[projects]]
-  digest = "1:832e17df5ff8bbe0e0693d2fb46c5e53f96c662ee804049ce3ab6557df74e3ab"
+  digest = "1:c06028bbc52478d997bbc08facb0c315aabc2295094d7bf8833756aa9aa25504"
   name = "github.com/golang/protobuf"
   packages = [
     "proto",
@@ -209,8 +202,8 @@
     "ptypes/timestamp",
   ]
   pruneopts = "T"
-  revision = "b4deda0973fb4c70b50d226b1af49f3da59f5265"
-  version = "v1.1.0"
+  revision = "b5d812f8a3706043e23a9cd5babf2e5423744d30"
+  version = "v1.3.1"
 
 [[projects]]
   branch = "master"
@@ -298,12 +291,12 @@
   version = "v1.0.1"
 
 [[projects]]
-  branch = "master"
-  digest = "1:dc6b1a6801b3055e9bd3da4cd1e568606eb48118cc6f28e947783aa5d998ad74"
+  digest = "1:690fdd6c81bc87d2b18056582023a4f9ed7f209006734419525c2bab8520a903"
   name = "github.com/jmhodges/levigo"
   packages = ["."]
   pruneopts = "T"
-  revision = "c42d9e0ca023e2198120196f842701bb4c55d7b9"
+  revision = "853d788c5c416eaaee5b044570784a96c7a26975"
+  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -378,14 +371,16 @@
   version = "v1.0.0"
 
 [[projects]]
-  digest = "1:f4f3858737fd9db5cf3ef8019c918a798a987d4d11f7e531c54dfe70d4708642"
+  digest = "1:3b5729e3fc486abc6fc16ce026331c3d196e788c3b973081ecf5d28ae3e1050d"
   name = "github.com/prometheus/client_golang"
   packages = [
     "prometheus",
+    "prometheus/internal",
     "prometheus/promhttp",
   ]
   pruneopts = "T"
-  revision = "ae27198cdd90bf12cd134ad79d1366a6cf49f632"
+  revision = "505eaef017263e299324067d40ca2c48f6a2cf50"
+  version = "v0.9.2"
 
 [[projects]]
   branch = "master"
@@ -528,25 +523,6 @@
   revision = "6b91fda63f2e36186f1c9d0e48578defb69c5d43"
 
 [[projects]]
-  digest = "1:71ffd1fca92b4972ecd588cf13d9929d4f444659788e9128d055a9126498d41d"
-  name = "github.com/tendermint/btcd"
-  packages = ["btcec"]
-  pruneopts = "T"
-  revision = "e5840949ff4fff0c56f9b6a541e22b63581ea9df"
-
-[[projects]]
-  branch = "master"
-  digest = "1:2b15c0442dc80b581ce7028b2e43029d2f3f985da43cb1d55f7bcdeca785bda0"
-  name = "github.com/tendermint/ed25519"
-  packages = [
-    ".",
-    "edwards25519",
-    "extra25519",
-  ]
-  pruneopts = "T"
-  revision = "d8387025d2b9d158cf4efb07e7ebf814bcce2057"
-
-[[projects]]
   digest = "1:25c97d29878b5f821bb17a379469f0f923426188241bf2aa81c18728cdc6927c"
   name = "github.com/tendermint/go-amino"
   packages = ["."]
@@ -563,11 +539,12 @@
   version = "v0.12.1"
 
 [[projects]]
-  digest = "1:b8bd45120cbea639592420b1d5363f102d819ea89d6239f4dae2a0814c76a6d2"
+  digest = "1:625bffd2ddf6e299c32f77a0b1eac9883c374ad2d756f156138d30803c94a3cb"
   name = "github.com/tendermint/tendermint"
   packages = [
     "abci/client",
     "abci/example/code",
+    "abci/example/counter",
     "abci/example/kvstore",
     "abci/server",
     "abci/types",
@@ -583,6 +560,7 @@
     "crypto/multisig",
     "crypto/multisig/bitarray",
     "crypto/secp256k1",
+    "crypto/secp256k1/internal/secp256k1",
     "crypto/tmhash",
     "evidence",
     "libs/autofile",
@@ -592,8 +570,8 @@
     "libs/clist",
     "libs/common",
     "libs/db",
-    "libs/errors",
     "libs/events",
+    "libs/fail",
     "libs/flowrate",
     "libs/log",
     "libs/pubsub",
@@ -614,7 +592,6 @@
     "rpc/core",
     "rpc/core/types",
     "rpc/grpc",
-    "rpc/lib",
     "rpc/lib/client",
     "rpc/lib/server",
     "rpc/lib/types",
@@ -627,8 +604,8 @@
     "version",
   ]
   pruneopts = "T"
-  revision = "90eda9bfb6e6daeed1c8015df41cb36772d91778"
-  version = "v0.25.1-rc0"
+  revision = "d2eab536ac1071b1b5f64283572397606326eb73"
+  version = "v0.31.5"
 
 [[projects]]
   branch = "master"
@@ -637,6 +614,8 @@
   packages = [
     "chacha20poly1305",
     "curve25519",
+    "ed25519",
+    "ed25519/internal/edwards25519",
     "hkdf",
     "internal/chacha20",
     "internal/subtle",
