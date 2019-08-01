@@ -90,6 +90,14 @@
   revision = "0bce6a6887123b67a60366d2c9fe2dfb74289d2e"
 
 [[projects]]
+  digest = "1:3f4229a8bec32e51c49fb13e9ef844b29c3763f05cb4ec1ebe1aae0132cc8c33"
+  name = "github.com/etcd-io/bbolt"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "a0458a2b35708eef59eb5f620ceb3cd1c01a824d"
+  version = "v1.3.3"
+
+[[projects]]
   branch = "ethermint-statedb"
   digest = "1:00d8053ec8370727a6ecb12cdbfc0b3ce08bce2f8ac2aa34d57402ff09243517"
   name = "github.com/ethereum/go-ethereum"
@@ -555,12 +563,15 @@
   version = "v0.12.0"
 
 [[projects]]
-  digest = "1:55a1665acfc380ebc869cdcd2438f60781aab71ba1b96e54f2811445fee342b8"
+  digest = "1:269a9b6143e0532bba67cf3870f05e6efa94bd184aa2fd014aedb7c664c10f9c"
   name = "github.com/tendermint/iavl"
-  packages = ["."]
+  packages = [
+    ".",
+    "common",
+  ]
   pruneopts = "T"
-  revision = "ac7c35c12e8633a1e9fd0b52a00b900b40f32cd3"
-  version = "v0.12.1"
+  revision = "e3e5a91edda5a9d525c49749ad102d9cf3b602b4"
+  version = "v0.12.4"
 
 [[projects]]
   digest = "1:b8bd45120cbea639592420b1d5363f102d819ea89d6239f4dae2a0814c76a6d2"
@@ -629,6 +640,14 @@
   pruneopts = "T"
   revision = "90eda9bfb6e6daeed1c8015df41cb36772d91778"
   version = "v0.25.1-rc0"
+
+[[projects]]
+  digest = "1:901eec910ceb4c12d14713eef1241e5a2a8c71e36bdeb100e57a53b3942e5094"
+  name = "github.com/tendermint/tm-db"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "94017c88bf1d54efad5e99736182b97f32f73916"
+  version = "v0.1.1"
 
 [[projects]]
   branch = "master"
