@@ -90,6 +90,14 @@
   revision = "0bce6a6887123b67a60366d2c9fe2dfb74289d2e"
 
 [[projects]]
+  digest = "1:3f4229a8bec32e51c49fb13e9ef844b29c3763f05cb4ec1ebe1aae0132cc8c33"
+  name = "github.com/etcd-io/bbolt"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "a0458a2b35708eef59eb5f620ceb3cd1c01a824d"
+  version = "v1.3.3"
+
+[[projects]]
   branch = "ethermint-statedb"
   digest = "1:00d8053ec8370727a6ecb12cdbfc0b3ce08bce2f8ac2aa34d57402ff09243517"
   name = "github.com/ethereum/go-ethereum"
@@ -528,6 +536,14 @@
   revision = "6b91fda63f2e36186f1c9d0e48578defb69c5d43"
 
 [[projects]]
+  digest = "1:1205ba08ebfb1b33d335b1a788ff176a83b934dc3048edda6a409b7e95b12984"
+  name = "github.com/tecbot/gorocksdb"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "f0fad39f321c61bf05fcb4a01fe259606235e712"
+  version = "v1.0"
+
+[[projects]]
   digest = "1:71ffd1fca92b4972ecd588cf13d9929d4f444659788e9128d055a9126498d41d"
   name = "github.com/tendermint/btcd"
   packages = ["btcec"]
@@ -555,12 +571,15 @@
   version = "v0.12.0"
 
 [[projects]]
-  digest = "1:55a1665acfc380ebc869cdcd2438f60781aab71ba1b96e54f2811445fee342b8"
+  digest = "1:858c05cb7f647480a9f4ddc496d726f6599a7c0ab486b213ffb9146ebac76481"
   name = "github.com/tendermint/iavl"
-  packages = ["."]
+  packages = [
+    ".",
+    "common",
+  ]
   pruneopts = "T"
-  revision = "ac7c35c12e8633a1e9fd0b52a00b900b40f32cd3"
-  version = "v0.12.1"
+  revision = "7bc1995fa57a8aabc033ed01ea7ed05f0ab55988"
+  version = "v0.13.0"
 
 [[projects]]
   digest = "1:b8bd45120cbea639592420b1d5363f102d819ea89d6239f4dae2a0814c76a6d2"
@@ -629,6 +648,14 @@
   pruneopts = "T"
   revision = "90eda9bfb6e6daeed1c8015df41cb36772d91778"
   version = "v0.25.1-rc0"
+
+[[projects]]
+  digest = "1:58c6942ced341907df61f8ce620794d0fc6f190602c05f0d54b6009c13d7af68"
+  name = "github.com/tendermint/tm-db"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "e308ac90e23d877e646495f52000647991384fad"
+  version = "v0.4.0"
 
 [[projects]]
   branch = "master"
