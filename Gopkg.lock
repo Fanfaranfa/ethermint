@@ -221,6 +221,14 @@
   revision = "2e65f85255dbc3072edf28d6b5b8efc472979f5a"
 
 [[projects]]
+  digest = "1:0bfbe13936953a98ae3cfe8ed6670d396ad81edf069a806d2f6515d7bb6950df"
+  name = "github.com/google/btree"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "4030bb1f1f0c35b30ca7009e9ebd06849dd45306"
+  version = "v1.0.0"
+
+[[projects]]
   digest = "1:3a26588bc48b96825977c1b3df964f8fd842cd6860cc26370588d3563433cf11"
   name = "github.com/google/uuid"
   packages = ["."]
@@ -360,6 +368,14 @@
   pruneopts = "T"
   revision = "c01d1270ff3e442a8a57cddc1c92dc1138598194"
   version = "v1.2.0"
+
+[[projects]]
+  branch = "master"
+  digest = "1:e3c9ed9dca0ac77a50165f6752391fd915b26a020691a731d778304e7b17725b"
+  name = "github.com/petar/GoLLRB"
+  packages = ["llrb"]
+  pruneopts = "T"
+  revision = "33fb24c13b99c46c93183c291836c573ac382536"
 
 [[projects]]
   digest = "1:40e195917a951a8bf867cd05de2a46aaf1806c50cf92eebf4c16f78cd196f747"
@@ -528,6 +544,14 @@
   revision = "6b91fda63f2e36186f1c9d0e48578defb69c5d43"
 
 [[projects]]
+  digest = "1:1205ba08ebfb1b33d335b1a788ff176a83b934dc3048edda6a409b7e95b12984"
+  name = "github.com/tecbot/gorocksdb"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "f0fad39f321c61bf05fcb4a01fe259606235e712"
+  version = "v5.0"
+
+[[projects]]
   digest = "1:71ffd1fca92b4972ecd588cf13d9929d4f444659788e9128d055a9126498d41d"
   name = "github.com/tendermint/btcd"
   packages = ["btcec"]
@@ -555,12 +579,15 @@
   version = "v0.12.0"
 
 [[projects]]
-  digest = "1:55a1665acfc380ebc869cdcd2438f60781aab71ba1b96e54f2811445fee342b8"
+  digest = "1:d282fe350e0493b610cb1df3ced28c528f3a67ac63a00b6739d09d8fa0a9d2a5"
   name = "github.com/tendermint/iavl"
-  packages = ["."]
+  packages = [
+    ".",
+    "common",
+  ]
   pruneopts = "T"
-  revision = "ac7c35c12e8633a1e9fd0b52a00b900b40f32cd3"
-  version = "v0.12.1"
+  revision = "2bfa5ad264484756824ccecf5a9f85de8f894ba6"
+  version = "v0.14.2"
 
 [[projects]]
   digest = "1:b8bd45120cbea639592420b1d5363f102d819ea89d6239f4dae2a0814c76a6d2"
@@ -629,6 +656,22 @@
   pruneopts = "T"
   revision = "90eda9bfb6e6daeed1c8015df41cb36772d91778"
   version = "v0.25.1-rc0"
+
+[[projects]]
+  digest = "1:add3fe00ae85e580397baf52f7c2c0a35a5a6604b9595aea068a3951bee9d511"
+  name = "github.com/tendermint/tm-db"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "b3f4c1554f4734ba58c9a3614aa98713922c14f8"
+  version = "v0.6.0"
+
+[[projects]]
+  digest = "1:60485c0845ade3b98f8e588ccf6b34522764f5df744dc9f3106ed103e4ca9fb4"
+  name = "go.etcd.io/bbolt"
+  packages = ["."]
+  pruneopts = "T"
+  revision = "232d8fc87f50244f9c808f4745759e08a304c029"
+  version = "v1.3.5"
 
 [[projects]]
   branch = "master"
